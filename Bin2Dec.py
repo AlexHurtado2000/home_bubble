@@ -1,9 +1,19 @@
+"""
+
+User stories:
+1. Can enter up to 8 binary digits in one input field.
+2. Must be notified if anything other than a 0 or a 1 was entered.
+3. Views the results in a single output field.
+
+"""
+
 import sys
 
 # Hard-coded test input
 print("Please provide a binary input: ")
 user_input = input()
 
+# Doing the necessary checks to ensure that the user stories are completed.
 if user_input.isnumeric() != True:
     print("Input not a number")
     sys.exit()
