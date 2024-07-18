@@ -1,0 +1,60 @@
+<!--
+
+    Bin2Dec
+    ---------
+    Bin2Dec allows the user to enter strings of up to 8 binary digits,
+    0's and 1's, in any sequence and then displays its decimal equivalent.
+
+    The following constraints should be implemented:
+    a.) Arrays must not be used to contain binary digits.
+    b.) Determining the decimal equivalent of a particular binary digit in the sequence must
+    be calculated using a single mathematical function.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Bin2Dec</title>
+
+    <link rel="stylesheet" type="text/css" href="tutorial.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <div id="outer" class="container">
+        <h1>Bin2Dec</h1>
+    </div>
+
+    <div id="intro-dialogue" class="container">
+        <p>Binary is the number system all digital computers are based on. Therefore it's important for developers to understand binary, or base 2, mathematics. The purpose of Bin2Dec is to provide practice and understanding of how binary calculations.</p>
+
+        <p1>Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's and 1's, in any sequence and then displays its decimal equivalent. </p1>
+
+    </div>
+    
+    <div id="main" class="container">
+        <form id="bin-form">
+            <label for="fname">Binary input: </label><br>
+            <input type="text" id="bin" name="bin"><br>
+        </form>
+        <p id="greeting">huh</p>
+    </div>
+
+    <script>
+        document.getElementById("bin-form").addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('bin').value;
+            var greeting = 'Hello, ' + name + '!';
+            document.getElementById('greeting').textContent = greeting;
+        })
+
+    </script>
+    
+</body>
+</html>

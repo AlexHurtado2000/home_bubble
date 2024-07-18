@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+}
+
+.main {
+    list-style-type: none;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+#intro-dialogue {
+    padding: 0.1em 1em 3em 1em;
+}
