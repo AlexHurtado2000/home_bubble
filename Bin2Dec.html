@@ -23,6 +23,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Bin2Dec.js"></script>
 
 </head>
 <body>
@@ -34,27 +35,27 @@
     <div id="intro-dialogue" class="container">
         <p>Binary is the number system all digital computers are based on. Therefore it's important for developers to understand binary, or base 2, mathematics. The purpose of Bin2Dec is to provide practice and understanding of how binary calculations.</p>
 
-        <p1>Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's and 1's, in any sequence and then displays its decimal equivalent. </p1>
+        <p1>Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's and 1's, in any sequence and then displays its decimal equivalent. </p1></br>
+
+        <p1>Update Hint: Perhaps we could make the cap character count variable for the user?</p1>
 
     </div>
     
     <div id="main" class="container">
         <form id="bin-form">
             <label for="fname">Binary input: </label><br>
-            <input type="text" id="bin" name="bin"><br>
+            <input type="text" id="bin" name="bin" required><br>
+
+            <div>
+              <button id="bin_input" type="submit">Submit</button>
+              
+            </div>
+
         </form>
-        <p id="greeting">huh</p>
+        <div id="result">
+          
+        </div>
     </div>
 
-    <script>
-        document.getElementById("bin-form").addEventListener('submit', function(event) {
-            event.preventDefault();
-            var name = document.getElementById('bin').value;
-            var greeting = 'Hello, ' + name + '!';
-            document.getElementById('greeting').textContent = greeting;
-        })
-
-    </script>
-    
 </body>
 </html>
