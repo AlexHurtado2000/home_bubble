@@ -1,0 +1,20 @@
+h1 {
+    color: red;
+}
+
+.main {
+    list-style-type: none;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+#intro-dialogue {
+    padding: 0.1em 1em 3em 1em;
+}
+
+#box {
+  width: 200px;
+  height: 150px;
+  background-color: #0077b6;
+  border-radius: 46% 54% 100% 0% / 40% 100% 0% 60%;
+}

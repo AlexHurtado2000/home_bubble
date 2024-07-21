@@ -1,0 +1,70 @@
+<!--
+
+    Border-radius Previewer
+    ---------
+    The border-radius property can have multiple values changed.
+    Preview how the shape looks while changing these values.
+
+    ** User Stories **
+    1. The user can see a box which has a border-radius property applied
+    to it.
+    2. User can change the 4 border-radius values that are applied to the
+    box (top-left, top-right, bottom-left, bottom-right).
+    3. The user should be able to copy the resulting CSS to the clipboard.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Border Radius Previewer</title>
+
+    <link rel="stylesheet" type="text/css" href="Border.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Bin2Dec.js"></script>
+
+</head>
+<body>
+
+    <div id="outer" class="container">
+        <h1>Border Radius Previewer</h1>
+    </div>
+
+    <div id="intro-dialogue" class="container">
+      <p>The border-radius property can have multiple values changed.</p>
+      <p>Preview how the shape looks while changing these values.</p>
+
+    </div>
+    
+    <div id="main" class="container">
+
+      <div id="box" class="container">
+      </div>
+
+
+      <div class="slidecontainer">
+        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="top-left">
+      </div>
+
+      <div class="slidecontainer">
+        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="top-right">
+      </div>
+
+      <div class="slidecontainer">
+        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="bottom-left">
+      </div>
+
+      <div class="slidecontainer">
+        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="bottom-right">
+      </div>
+
+
+    </div>
+
+
+</body>
+</html>
