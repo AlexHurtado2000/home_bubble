@@ -21,11 +21,12 @@
 
     <title>Border Radius Previewer</title>
 
-    <link rel="stylesheet" type="text/css" href="Border.css" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="Border.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Border.css" />
 
 </head>
 <body>
@@ -48,22 +49,24 @@
 
         <div id="box" class="container">
 
-        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="top-slider">
+          <input type="range" value="50" min="1" max="100" value=0 class="slider" id="top-slider">
 
-        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="bottom-slider">
+          <input type="range" value="50" min="1" max="100" value=0 class="slider" id="bottom-slider">
 
-        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="left-slider">
+          <input type="range" value="50" min="1" max="100" value=0 class="slider" id="left-slider">
 
-        <input type="range" value="50" min="1" max="100" value=0 class="slider" id="right-slider">
+          <input type="range" value="50" min="1" max="100" value=0 class="slider" id="right-slider">
 
-
-
-      </div>
-
+        </div>
         
       </div>
+      <form id="border-form">
+        <label for="radius">Border Values: </label><br>
+        <span id="code" class="output_code" type="text"></span>
 
+        <button id="clipboard" onclick="clipboard_copy()">Copy to Clipboard</button>
 
+      </form>
 
     </div>
 

@@ -1,3 +1,8 @@
+
+:root {
+  --radius: 0;
+}
+
 h1 {
     color: red;
 }
@@ -31,7 +36,7 @@ h1 {
   width: 200px;
   height: 200px;
   background-color: #0077b6;
-  border-radius: 46% 54% 100% 0% / 40% 100% 0% 60%;
+  border-radius: var(--radius);
   margin: 0 auto;
   padding: 30px;
 }
@@ -47,6 +52,7 @@ h1 {
   position: absolute;
   bottom: 0px;
   left: 102px;
+  transform: rotate(180deg) scaleX(1);
 
 }
 
@@ -55,7 +61,7 @@ h1 {
   left: -70px;
   top: 150px;
 
-  transform: rotate(90deg) scaleX(1);
+  transform: rotate(270deg) scaleX(1);
 
 }
 
